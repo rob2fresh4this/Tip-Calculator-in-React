@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    src: url(../assets/Space_Mono/SpaceMono-Regular.ttf) format('truetype');
+}
+
+body {
+    font-family: 'Space Mono', sans-serif;
+}

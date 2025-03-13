@@ -62,7 +62,7 @@ function TipCalculator() {
                     {/* Bill Input */}
                     <div>
                         <label className="block text-[hsl(186,14%,43%)] mb-2">Bill</label>
-                        <div className="bg-[hsl(189,41%,97%)] mt-4 w-full h-[44px] rounded-[5px] flex items-center justify-between px-2">
+                        <div className="bg-[hsl(189,41%,97%)] mt-4 w-full h-[44px] rounded-[5px] flex items-center justify-between px-2 focus-within:border-[hsl(172,67%,45%)] border-2 border-transparent">
                             <img src={dollarSymbol} className="pl-[8px]" alt="dollar icon" />
                             <input
                                 placeholder="0"
@@ -91,7 +91,7 @@ function TipCalculator() {
                                     {tip}%
                                 </button>
                             ))}
-                            <div className="bg-[hsl(189,41%,97%)] w-full h-[44px] rounded-[5px] flex items-center justify-between">
+                            <div className="bg-[hsl(189,41%,97%)] w-full h-[44px] rounded-[5px] flex items-center justify-between focus-within:border-[hsl(172,67%,45%)] border-2 border-transparent">
                                 <input
                                     type="number"
                                     min={0}
@@ -110,7 +110,7 @@ function TipCalculator() {
                         <label className="text-[hsl(186,14%,43%)] mb-2 flex flex-col md:flex-row md:justify-between text-sm">
                             Number of People <div className="text-red-500 text-sm pt-1 md:pt-0">{warningText}</div>
                         </label>
-                        <div className="bg-[hsl(189,41%,97%)] mt-4 w-full h-[44px] rounded-[5px] flex items-center justify-between px-2">
+                        <div className="bg-[hsl(189,41%,97%)] mt-4 w-full h-[44px] rounded-[5px] flex items-center justify-between px-2 focus-within:border-[hsl(172,67%,45%)] border-2 border-transparent">
                             <img src={personIcon} className="pl-[8px]" alt="person icon" />
                             <input
                                 placeholder="0"

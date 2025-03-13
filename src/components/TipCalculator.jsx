@@ -52,7 +52,7 @@ function TipCalculator() {
         <div className="flex flex-col justify-center items-center w-full h-screen bg-[hsl(185,41%,84%)] font-bold text-sm">
             {/* Logo */}
 
-            <img src={mainLogo} alt="main logo" className="mt-10 mb-12 " />
+            <img src={mainLogo} alt="main logo" className="mt-[-4rem] mb-10 md:mt-10 md:mb-12 " />
 
             {/* Card Container */}
             <div className="bg-[hsl(0,0%,100%)] p-8 md:p-10 rounded-2xl shadow-lg flex flex-col md:flex-row w-[100%] md:w-[60%]">

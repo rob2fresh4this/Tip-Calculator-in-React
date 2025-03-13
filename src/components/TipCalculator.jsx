@@ -96,7 +96,7 @@ function TipCalculator() {
                                     type="number"
                                     min={0}
                                     placeholder="Custom"
-                                    className="w-full bg-transparent border-none outline-none p-2 rounded-lg appearance-none h-[44px] text-right focus:outline-none focus:ring-0 active:outline-none active:ring-0 placeholder:text-center"
+                                    className="w-full bg-transparent border-none outline-none p-2 rounded-lg appearance-none h-[44px] text-center md:text-right focus:outline-none focus:ring-0 active:outline-none active:ring-0 placeholder:text-center"
                                     value={customTip || ""}
                                     onChange={handleCustomTip}
                                 />

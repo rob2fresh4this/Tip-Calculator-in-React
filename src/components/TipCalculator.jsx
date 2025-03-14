@@ -16,9 +16,10 @@ function TipCalculator() {
     };
 
     const handleCustomTip = (e) => {
-        const value = e.target.value;
-        setCustomTip(value);
-        setTipPercentage(value === "" ? 0 : parseFloat(value) / 100);
+        const value = e.target.value === "" ? "" : parseFloat(e.target.value);
+        if (value < 0) return; // Prevent negative values
+        setCustomTip(e.target.value);
+        setTipPercentage(value === "" ? 0 : value / 100);
     };
 
     useEffect(() => {
@@ -70,8 +71,12 @@ function TipCalculator() {
                                 type="number"
                                 className="text-[20px] mr-2 bg-transparent border-none outline-none w-full text-right appearance-none focus:outline-none focus:ring-0 active:outline-none active:ring-0"
                                 value={bill || ""}
-                                onChange={(e) => setBill(e.target.value === "" ? "" : parseFloat(e.target.value))}
+                                onChange={(e) => {
+                                    const value = e.target.value === "" ? "" : parseFloat(e.target.value);
+                                    setBill(value < 0 ? 0 : value);
+                                }}
                             />
+
                         </div>
                     </div>
 
